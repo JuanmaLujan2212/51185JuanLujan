@@ -1,0 +1,44 @@
+<h1>Web Socket</h1>
+<div id="products"></div>
+
+<div>
+    <h1>Add Product</h1>
+    <form id="formulario">
+        <label>Titulo</label>
+        <input id="titleProd">
+
+        <label>Descripcion</label>
+        <input id="descProd">
+
+        <label>Codigo</label>
+        <input id="codeProd">
+
+        <label>Precio</label>
+        <input id="priceProd">
+
+        <label>Estado</label>
+        <input id="statusProd">
+
+        <label>Stock</label>
+        <input id="stockProd">
+
+        <label>Categoria</label>
+        <input id="catProd">
+
+        <label>Thumbnail</label>
+        <input id="thumbnailProd">
+    </form>
+
+    <button id="submitProd">Agregar</button>
+</div>
+
+<h1>Delete Product</h1>
+
+<label>Ingrese el ID del producto que desea eliminar</label>
+<input id="deleteProd">
+<button id="deleteProdBtn">Eliminar</button>
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/home.js"></script>
