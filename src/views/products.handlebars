@@ -1,11 +1,11 @@
 <div>
     {{#if user}}
-    <h1>Bienvenido {{user.name}}!!!</h1>
+    <h1>Bienvenido {{user.first_name}}!!!</h1>
     <p>Email: {{user.email}}</p>
     <p>Edad: {{user.age}}</p>
     <p>Rol: {{user.rol}}</p>
     <a href="/profile">Ver Perfil</a>
-    <a href="/api/session/logout"><button>Salir</button></a>
+    <a href="/api/sessions/logout"><button>Salir</button></a>
     <br><br><br>
     {{/if}}
 

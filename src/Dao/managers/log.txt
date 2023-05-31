@@ -1526,3 +1526,13 @@ Fecha: 5/30/2023 - Hora: 9:52:00 PM - Metodo: CONSULTA PRODS
 Fecha: 5/30/2023 - Hora: 11:35:11 PM - Metodo: CONSULTA PRODS
 Fecha: 5/30/2023 - Hora: 11:37:04 PM - Metodo: CONSULTA PRODS
 Fecha: 5/31/2023 - Hora: 2:19:33 AM - Metodo: CONSULTA PRODS
+Fecha: 5/31/2023 - Hora: 5:06:17 AM - Metodo: CONSULTA PRODS
+Fecha: 5/31/2023 - Hora: 5:47:09 AM - Metodo: CONSULTA PRODS
+Fecha: 5/31/2023 - Hora: 6:44:13 AM - Metodo: CONSULTA PRODS
+Fecha: 5/31/2023 - Hora: 6:51:12 AM - Metodo: CONSULTA PRODS
+Fecha: 5/31/2023 - Hora: 6:52:09 AM - Metodo: CONSULTA PRODS
+Fecha: 5/31/2023 - Hora: 6:52:12 AM - Metodo: CONSULTA PRODS
+Fecha: 5/31/2023 - Hora: 6:53:41 AM - Metodo: CONSULTA PRODS
+Fecha: 5/31/2023 - Hora: 6:55:38 AM - Metodo: CONSULTA PRODS
+Fecha: 5/31/2023 - Hora: 6:58:41 AM - Metodo: CONSULTA PRODS
+Fecha: 5/31/2023 - Hora: 6:59:17 AM - Metodo: CONSULTA PRODS
