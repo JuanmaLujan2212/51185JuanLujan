@@ -1536,3 +1536,6 @@ Fecha: 5/31/2023 - Hora: 6:53:41 AM - Metodo: CONSULTA PRODS
 Fecha: 5/31/2023 - Hora: 6:55:38 AM - Metodo: CONSULTA PRODS
 Fecha: 5/31/2023 - Hora: 6:58:41 AM - Metodo: CONSULTA PRODS
 Fecha: 5/31/2023 - Hora: 6:59:17 AM - Metodo: CONSULTA PRODS
+Fecha: 6/12/2023 - Hora: 2:46:37 PM - Metodo: CONSULTA PRODS
+Fecha: 6/12/2023 - Hora: 2:47:21 PM - Metodo: CONSULTA PRODS
+Fecha: 6/12/2023 - Hora: 3:54:03 PM - Metodo: CONSULTA PRODS

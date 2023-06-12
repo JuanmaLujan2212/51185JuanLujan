@@ -7,8 +7,13 @@ const schema = new mongoose.Schema({
     last_name:String,
     email:String,
     rol: String,
-    age:Number,
-    password:String
+    age: Number,
+    password: String,
+    cart:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:"Carts"
+    }
+
 })
 
 const userModel = mongoose.model(collection, schema);
