@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser';
 import handlebars from 'express-handlebars';
 import { Server } from 'socket.io';
 import passport from "passport";
+import { config } from "./config/config.js"
 
 import __dirname from './utils.js';
 import ProductManager from "./Dao/managers/MongoProductManager.js";
@@ -19,10 +20,12 @@ import initializePassport from "./config/passport.config.js";
 
 const productManager = new ProductManager();
 
+console.log(config)
 
-const PORT =  process.env.PORT || 8080;
+
+const PORT =  config.server.port;
 const app = express();
-const MONGO = 'mongodb+srv://juanmalujantmp:juanma2212@juanmanuelorg.mf4wbjc.mongodb.net/?retryWrites=true&w=majority'
+const MONGO = config.mongo.url;
 
 const connection = await mongoose.connect(MONGO)
 
