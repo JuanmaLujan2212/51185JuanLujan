@@ -1,6 +1,5 @@
 import cartModel from '../models/carts.js'
 import ManagerAccess from "./ManagerAccess.js";
-import ProductManager from './MongoProductManager.js';
 const managerAccess = new ManagerAccess();
 
 export default class cartManager{

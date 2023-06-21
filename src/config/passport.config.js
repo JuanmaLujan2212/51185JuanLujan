@@ -3,6 +3,9 @@ import local from 'passport-local';
 import userService from '../Dao/models/user.js';
 import { createHash, validatePassword } from '../utils.js';
 import GitHubStrategy from 'passport-github2'
+import cartManager from '../Dao/managers/MongoCartManager.js';
+
+const CartManager = new cartManager();
 
 const LocalStrategy = local.Strategy;
 
@@ -12,8 +15,10 @@ const initializePassport = () => {
     passport.use('register', new LocalStrategy(
         {passReqToCallback:true, usernameField:'email'}, 
         async (req,username, password,done) =>{
-            const { first_name, last_name, email,age, rol, cartid } = req.body;
-            console.log(cartid)
+            const { first_name, last_name, email,age, rol } = req.body;
+            const result = await CartManager.addCart();
+            const cartid = result._id.toString();
+
             try {
                 const user = await userService.findOne({email:username}); 
                 if(user){

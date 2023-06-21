@@ -1539,3 +1539,15 @@ Fecha: 5/31/2023 - Hora: 6:59:17 AM - Metodo: CONSULTA PRODS
 Fecha: 6/12/2023 - Hora: 2:46:37 PM - Metodo: CONSULTA PRODS
 Fecha: 6/12/2023 - Hora: 2:47:21 PM - Metodo: CONSULTA PRODS
 Fecha: 6/12/2023 - Hora: 3:54:03 PM - Metodo: CONSULTA PRODS
+Fecha: 6/21/2023 - Hora: 2:35:42 AM - Metodo: CONSULTA CARTS
+Fecha: 6/21/2023 - Hora: 2:36:10 AM - Metodo: CREAR UN CART
+Fecha: 6/21/2023 - Hora: 2:36:14 AM - Metodo: CONSULTA CARTS
+Fecha: 6/21/2023 - Hora: 2:37:56 AM - Metodo: CONSULTA CARTS
+Fecha: 6/21/2023 - Hora: 2:37:57 AM - Metodo: CONSULTA CARTS
+Fecha: 6/21/2023 - Hora: 2:37:59 AM - Metodo: CREAR UN CART
+Fecha: 6/21/2023 - Hora: 2:46:50 AM - Metodo: CREAR UN CART
+Fecha: 6/21/2023 - Hora: 2:48:15 AM - Metodo: CREAR UN CART
+Fecha: 6/21/2023 - Hora: 2:51:16 AM - Metodo: CREAR UN CART
+Fecha: 6/21/2023 - Hora: 2:52:39 AM - Metodo: CREAR UN CART
+Fecha: 6/21/2023 - Hora: 2:54:00 AM - Metodo: CREAR UN CART
+Fecha: 6/21/2023 - Hora: 2:54:05 AM - Metodo: CREAR UN CART
