@@ -14,6 +14,7 @@ import productModel from "./Dao/models/products.js";
 
 import sessionRouter from './routes/sessions.router.js'
 import productRouter from './routes/products.router.js';
+import ticketRouter from './routes/tickets.router.js'
 import cartRouter from './routes/carts.router.js';
 import viewsRouter from './routes/views.router.js';
 import initializePassport from "./config/passport.config.js";
@@ -56,6 +57,7 @@ app.use(passport.session());
 app.use('/', viewsRouter);
 app.use('/api/sessions', sessionRouter)
 app.use('/api/products', productRouter);
+app.use('/api/tickets', ticketRouter);
 app.use('/api/carts', cartRouter);
 
 

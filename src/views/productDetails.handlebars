@@ -6,6 +6,8 @@
   <p>Stock: {{this.stock}}</p>
   <p>Category: {{this.category}}</p>
 
-  <button>Agregar al carrito</button>
+  <button onclick="addToCart(`{{_id}}`)">Agregar al carrito</button>
   {{/each}}
 </div>
+
+<script src="/js/products.js"></script>

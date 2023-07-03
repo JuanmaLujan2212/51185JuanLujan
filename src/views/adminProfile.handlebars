@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Profile</title>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <h2>Lista de productos</h2>
+    <ul>
+        {{#each products}}
+            <li>{{this.title}} - {{this.price}}</li>
+        {{/each}}
+    </ul>
+
+    <div>
+        <h1>Agregar Producto</h1>
+        <form id="formulario">
+            <label>Titulo</label>
+            <input id="titleProd">
+
+            <label>Descripcion</label>
+            <input id="descProd">
+
+            <label>Codigo</label>
+            <input id="codeProd">
+
+            <label>Precio</label>
+            <input id="priceProd">
+
+            <label>Estado</label>
+            <input id="statusProd">
+
+            <label>Stock</label>
+            <input id="stockProd">
+
+            <label>Categoria</label>
+            <input id="catProd">
+
+            <label>Thumbnail</label>
+            <input id="thumbnailProd">
+            
+            <button id="submitProd">Agregar</button>
+        </form>
+    </div>
+
+    <h1>Eliminar Producto</h1>
+    <label>Ingrese el ID del producto que desea eliminar</label>
+    <input id="deleteProd">
+    <button id="deleteProdBtn">Eliminar</button>
+
+    <script src="/js/profile.js"></script>
+</body>
+</html>

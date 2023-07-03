@@ -6,7 +6,10 @@ const schema = new mongoose.Schema({
     first_name: String,
     last_name:String,
     email:String,
-    rol: String,
+    rol: {
+        type: String,
+        default: "user"
+    },
     age: Number,
     password: String,
     cart:{

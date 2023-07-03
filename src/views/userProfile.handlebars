@@ -1,0 +1,16 @@
+<h1>User Profile</h1>
+
+{{#if cart}}
+  <h2>Cart</h2>
+  <ul>
+    {{#each cart}}
+      <li>
+        <h3>{{product.title}}</h3>
+        <p>Quantity: {{quantity}}</p>
+        <p>Price: {{product.price}}</p>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>No items in the cart.</p>
+{{/if}}

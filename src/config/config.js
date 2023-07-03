@@ -2,14 +2,15 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const PORT = process.env.PORT;
-const MONGO = process.env.MONGO;
-
 export const config = {
     server: {
-        port: PORT
+        port: process.env.PORT
     },
     mongo: {
-        url: MONGO
+        url:  process.env.MONGO
+    },
+    gmail: {
+        adminAccount: process.env.ADMIN_EMAIL,
+        adminPass: process.env.ADMIN_PASS
     }
 }

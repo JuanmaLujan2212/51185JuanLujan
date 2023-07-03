@@ -1,6 +1,13 @@
 import cartModel from '../models/carts.js'
 import ManagerAccess from "./ManagerAccess.js";
+import ProductModel from "../models/products.js";
+import userModel from '../models/user.js';
+import TicketManager from "./MongoTicketManager.js";
+import { transporter } from '../../config/gmail.js';
+
+
 const managerAccess = new ManagerAccess();
+const ticketManager = new TicketManager();
 
 export default class cartManager{
 
@@ -99,6 +106,60 @@ export default class cartManager{
         { $set: { 'products.$.quantity': newQty } },
         { new: true }
       );
+    
+      return cart;
+
+
+    };
+
+    checkout = async (id_cart) => {
+      await managerAccess.crearRegistro('CheckOut');
+
+      const cart = await this.getCartsById(id_cart)
+      const products = cart.products
+
+      const user = await userModel.findOne({ cart: cart._id });
+
+      let totalPrice = 0;
+
+      for (const item of products) {
+        const product = item.product;
+        const quantity = item.quantity;
+    
+        const updatedProduct = await ProductModel.findById(product._id);
+    
+        if (updatedProduct.stock >= quantity) {
+          updatedProduct.stock -= quantity;
+          await updatedProduct.save();
+          totalPrice += product.price * quantity;
+          await this.delProdFromCart(product._id, id_cart);
+          
+        } else {
+          console.log(`El producto ${product.title} no tiene suficiente stock`);
+        }
+      }
+
+      const bodyData = {
+        purchaser: user.email,
+        amount: totalPrice
+      }
+
+      fetch('http://localhost:8080/api/tickets', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(bodyData)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+
+    
     
       return cart;
 

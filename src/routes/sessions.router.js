@@ -24,7 +24,8 @@ router.post('/login', passport.authenticate('login',{failureRedirect:'/faillogin
         last_name: req.user.last_name,
         age: req.user.age,
         email: req.user.email,
-        rol: req.user.rol
+        rol: req.user.rol,
+        cart: req.user.cart
     }
 
 
