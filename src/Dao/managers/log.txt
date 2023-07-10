@@ -1786,3 +1786,46 @@ Fecha: 7/2/2023 - Hora: 7:02:41 PM - Metodo: CONSULTA PRODS
 Fecha: 7/2/2023 - Hora: 8:21:06 PM - Metodo: ALTA PROD
 Fecha: 7/2/2023 - Hora: 10:33:10 PM - Metodo: CONSULTA PRODS
 Fecha: 7/2/2023 - Hora: 10:43:10 PM - Metodo: BORRAR UN PROD
+Fecha: 4/7/2023 - Hora: 16:34:25 - Metodo: CREAR UN CART
+Fecha: 4/7/2023 - Hora: 16:34:37 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 18:41:31 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 18:41:33 - Metodo: CONSULTA UN PROD
+Fecha: 4/7/2023 - Hora: 23:13:56 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:14:14 - Metodo: CONSULTA UN PROD
+Fecha: 4/7/2023 - Hora: 23:18:05 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:18:52 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:18:54 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:19:04 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:19:42 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:20:22 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:20:25 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:20:26 - Metodo: CONSULTA UN PROD
+Fecha: 4/7/2023 - Hora: 23:23:56 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:26:48 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:27:45 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:27:49 - Metodo: CONSULTA UN PROD
+Fecha: 4/7/2023 - Hora: 23:39:34 - Metodo: CONSULTA UN PROD
+Fecha: 4/7/2023 - Hora: 23:40:45 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:40:53 - Metodo: CONSULTA PRODS
+Fecha: 4/7/2023 - Hora: 23:41:05 - Metodo: CREAR UN CART
+Fecha: 4/7/2023 - Hora: 23:41:08 - Metodo: CONSULTA CARTS
+Fecha: 4/7/2023 - Hora: 23:42:43 - Metodo: CREAR UN CART
+Fecha: 4/7/2023 - Hora: 23:42:44 - Metodo: CREAR UN CART
+Fecha: 4/7/2023 - Hora: 23:42:45 - Metodo: CREAR UN CART
+Fecha: 4/7/2023 - Hora: 23:42:52 - Metodo: CREAR UN CART
+Fecha: 4/7/2023 - Hora: 23:42:54 - Metodo: CONSULTA CARTS
+Fecha: 4/7/2023 - Hora: 23:43:08 - Metodo: CREAR UN CART
+Fecha: 4/7/2023 - Hora: 23:43:09 - Metodo: CREAR UN CART
+Fecha: 4/7/2023 - Hora: 23:43:10 - Metodo: CREAR UN CART
+Fecha: 4/7/2023 - Hora: 23:43:11 - Metodo: CREAR UN CART
+Fecha: 4/7/2023 - Hora: 23:49:57 - Metodo: CheckOut
+Fecha: 4/7/2023 - Hora: 23:49:57 - Metodo: CONSULTA UN CART
+Fecha: 4/7/2023 - Hora: 23:49:58 - Metodo: ELIMINAR DE UN CART
+Fecha: 10/7/2023 - Hora: 12:40:42 - Metodo: CONSULTA PRODS
+Fecha: 10/7/2023 - Hora: 12:41:23 - Metodo: ALTA PROD
+Fecha: 10/7/2023 - Hora: 13:05:13 - Metodo: CONSULTA PRODS
+Fecha: 10/7/2023 - Hora: 13:37:04 - Metodo: CONSULTA PRODS
+Fecha: 10/7/2023 - Hora: 14:44:39 - Metodo: CONSULTA PRODS
+Fecha: 10/7/2023 - Hora: 14:49:47 - Metodo: CONSULTA PRODS
+Fecha: 10/7/2023 - Hora: 17:07:44 - Metodo: CONSULTA PRODS
+Fecha: 10/7/2023 - Hora: 17:08:05 - Metodo: CONSULTA PRODS

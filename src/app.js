@@ -11,6 +11,7 @@ import { config } from "./config/config.js"
 import __dirname from './utils.js';
 import ProductManager from "./Dao/managers/MongoProductManager.js";
 import productModel from "./Dao/models/products.js";
+import MessageModel from "./Dao/models/messages.js";
 
 import sessionRouter from './routes/sessions.router.js'
 import productRouter from './routes/products.router.js';
@@ -78,7 +79,6 @@ io.on('connection',  async socket =>{
     console.log('Usuario conectado');
     io.emit('product', productos)
 
-
     socket.on("addProduct", async data =>{
         await productManager.addProduct(data);
         const productos = await productModel.find();
@@ -90,5 +90,18 @@ io.on('connection',  async socket =>{
         const productos = await productModel.find();
         io.emit('product', productos);
     })
+
+    socket.on('sendMessage', async message => {
+
+        const result = await MessageModel.create(message);
+        console.log(result)
+    
+        try {
+          io.emit('message', message);
+        } catch (error) {
+          console.error('Error al guardar el mensaje:', error);
+        }
+      });
+
 
 })

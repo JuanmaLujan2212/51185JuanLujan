@@ -80,6 +80,10 @@ export default class ViewsController{
         res.render('login')
     }
 
+    async chat(req,res){
+        res.render('chat')
+    }
+
     async profile(req, res) {
         const user = req.session.user;
     
@@ -99,7 +103,17 @@ export default class ViewsController{
     
             res.render('userProfile', { cart: cartProducts });
         }
+    }
+
+    async getProfile(req, res) {
+        const user = req.session.user;
+        console.log(user)
+        return res.send(user)
       }
+
+
+
+
 
     async publicAcces (req,res,next){
         if(req.session.user) return res.redirect('/profile');

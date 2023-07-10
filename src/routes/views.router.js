@@ -1,11 +1,13 @@
 import { Router } from "express";
 import ViewsController from "../controllers/views.controller.js";
 
-const viewsController = new ViewsController
+const viewsController = new ViewsController();
 
 const router = Router();
 
 router.get('/', viewsController.getHomeProducts);
+
+router.get('/chat', viewsController.chat);
 
 router.get('/realtimeproducts', viewsController.getRealTimeProducts);
 
@@ -20,6 +22,8 @@ router.get('/register', viewsController.publicAcces , viewsController.register)
 router.get('/login', viewsController.publicAcces, viewsController.login)
 
 router.get('/profile', viewsController.privateAcces , viewsController.profile)
+
+router.get('/getProfile', viewsController.privateAcces , viewsController.getProfile)
   
 
 export default router;
