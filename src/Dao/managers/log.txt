@@ -1829,3 +1829,26 @@ Fecha: 10/7/2023 - Hora: 14:44:39 - Metodo: CONSULTA PRODS
 Fecha: 10/7/2023 - Hora: 14:49:47 - Metodo: CONSULTA PRODS
 Fecha: 10/7/2023 - Hora: 17:07:44 - Metodo: CONSULTA PRODS
 Fecha: 10/7/2023 - Hora: 17:08:05 - Metodo: CONSULTA PRODS
+Fecha: 10/7/2023 - Hora: 18:44:16 - Metodo: CONSULTA CARTS
+Fecha: 10/7/2023 - Hora: 18:44:30 - Metodo: CONSULTA CARTS
+Fecha: 10/7/2023 - Hora: 18:44:34 - Metodo: CONSULTA UN CART
+Fecha: 10/7/2023 - Hora: 18:44:38 - Metodo: CONSULTA UN CART
+Fecha: 10/7/2023 - Hora: 18:44:42 - Metodo: CheckOut
+Fecha: 10/7/2023 - Hora: 18:44:42 - Metodo: CONSULTA UN CART
+Fecha: 10/7/2023 - Hora: 18:45:01 - Metodo: CONSULTA CARTS
+Fecha: 10/7/2023 - Hora: 18:45:11 - Metodo: CONSULTA UN CART
+Fecha: 10/7/2023 - Hora: 18:46:08 - Metodo: CONSULTA UN CART
+Fecha: 10/7/2023 - Hora: 18:46:41 - Metodo: CheckOut
+Fecha: 10/7/2023 - Hora: 18:46:41 - Metodo: CONSULTA UN CART
+Fecha: 10/7/2023 - Hora: 18:46:42 - Metodo: ELIMINAR DE UN CART
+Fecha: 11/7/2023 - Hora: 01:25:19 - Metodo: CREAR UN CART
+Fecha: 11/7/2023 - Hora: 01:25:23 - Metodo: CONSULTA CARTS
+Fecha: 11/7/2023 - Hora: 01:25:41 - Metodo: CONSULTA UN CART
+Fecha: 11/7/2023 - Hora: 01:25:49 - Metodo: CheckOut
+Fecha: 11/7/2023 - Hora: 01:25:49 - Metodo: CONSULTA UN CART
+Fecha: 11/7/2023 - Hora: 01:32:40 - Metodo: CheckOut
+Fecha: 11/7/2023 - Hora: 01:32:40 - Metodo: CONSULTA UN CART
+Fecha: 11/7/2023 - Hora: 01:34:31 - Metodo: CheckOut
+Fecha: 11/7/2023 - Hora: 01:34:31 - Metodo: CONSULTA UN CART
+Fecha: 11/7/2023 - Hora: 01:42:35 - Metodo: CheckOut
+Fecha: 11/7/2023 - Hora: 01:42:35 - Metodo: CONSULTA UN CART
