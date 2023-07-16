@@ -1,5 +1,6 @@
 import productModel from "../models/products.js";
 import ManagerAccess from "./ManagerAccess.js";
+import { generateProduct } from "../../utils.js";
 
 const managerAccess = new ManagerAccess();
 
@@ -77,18 +78,23 @@ export default class ProductManager{
         }
     }
 
-    addProduct = async (product)=>{
-        await managerAccess.crearRegistro('ALTA PROD')
-
-        const {title, description, code, price, stock, category, thumbnail, status} = product;
-
-        if(!title || !description || !code || !price || !stock || !category || !thumbnail || !status){
-            return 'error: llene todos los campos'
+    addProduct = async (product) => {
+        await managerAccess.crearRegistro('ALTA PROD');
+      
+        const requiredFields = ['title', 'description', 'code', 'price', 'stock', 'category', 'thumbnail', 'status'];
+      
+        const missingFields = requiredFields.filter((field) => !product[field]);
+      
+        if (missingFields.length > 0) {
+          console.log('Error: Llene todos los campos. Faltan los siguientes campos:');
+          console.log(missingFields);
+          return 'Error: Llene todos los campos.';
         }
-        const result = await productModel.create(product)
-        console.log(result)
-        return result
-    }
+      
+        const result = await productModel.create(product);
+        console.log('Producto creado con éxito!');
+        return result;
+      };
 
     updateProduct = async (id_producto, newProd)=>{
         await managerAccess.crearRegistro('ACTUALIZAR UN PROD')
@@ -102,6 +108,15 @@ export default class ProductManager{
             return 'product not found'
         }
 
+    }
+
+    mockingProducts = async ()=>{
+        let products = [];
+        for (let i = 0; i < 100; i++) {
+            const prod = generateProduct();
+            products.push(prod)
+        }
+        return products
     }
 
 }

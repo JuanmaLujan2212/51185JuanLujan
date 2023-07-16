@@ -48,5 +48,10 @@ export default class ProductController{
         res.send({result})
     }
 
+    async mockingProducts(req,res){
+        const result = await productManager.mockingProducts();
+        res.send({result})
+    }
+
 
 }
