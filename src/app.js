@@ -19,10 +19,9 @@ import ticketRouter from './routes/tickets.router.js'
 import cartRouter from './routes/carts.router.js';
 import viewsRouter from './routes/views.router.js';
 import initializePassport from "./config/passport.config.js";
+import { addLogger } from "./utils/logger.js";
 
 const productManager = new ProductManager();
-
-console.log(config)
 
 
 const PORT =  config.server.port;
@@ -40,6 +39,20 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser());
+
+app.use(addLogger);
+
+app.get("/LoggerTest", (req,res)=>{
+    req.logger.silly("nivel silly");
+    req.logger.verbose("nivel verbose");
+    req.logger.debug("nivel debug");
+    req.logger.http("nivel http");
+    req.logger.info("nivel info");
+    req.logger.warn("nivel warn");
+    req.logger.error("nivel error");
+    req.logger.fatal("nivel fatal");
+    res.send("prueba de loggers")
+});
 
 
 app.use(session({
@@ -60,7 +73,6 @@ app.use('/api/sessions', sessionRouter)
 app.use('/api/products', productRouter);
 app.use('/api/tickets', ticketRouter);
 app.use('/api/carts', cartRouter);
-
 
 
 

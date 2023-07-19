@@ -2,6 +2,7 @@ import TicketManager from "../Dao/managers/MongoTicketManager.js";
 import { v4 as uuidv4 } from "uuid";
 import { transporter } from "../config/gmail.js";
 
+
 const ticketManager =  new TicketManager();
 
 
@@ -13,7 +14,9 @@ export default class TicketController{
             const order = await ticketManager.getAllTickets(orderId);
             res.send({status:"success", result:order})
         } catch (error) {
+            req.logger.error(error);
             res.send({status:"error", result:error.message})
+
         }
     }
 
@@ -23,6 +26,7 @@ export default class TicketController{
             const order = await ticketManager.getTicketById(orderId);
             res.send({status:"success", result:order})
         } catch (error) {
+            req.logger.error(error);
             res.send({status:"error", result:error.message})
         }
     }
@@ -59,12 +63,13 @@ export default class TicketController{
                 res.send({status:"success", result:orderCreated})
 
             } catch (error) {
-                console.log(error.message);
+                req.logger.error(error);
                 res.json({status:"error", message: "Hubo un error al enviar el mail con el ticket"})
             }   
 
 
         } catch (error) {
+            req.logger.error(error);
             res.send({status:"error", result:error.message})
         }
     }
