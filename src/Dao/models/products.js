@@ -36,6 +36,11 @@ const schema = new mongoose.Schema({
         type: Boolean,
         require: true
     },
+    owner:{
+        type: String,
+        require: true,
+        default: "admin"
+    }
 
 })
 

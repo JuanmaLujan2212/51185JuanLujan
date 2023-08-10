@@ -11,6 +11,7 @@ export const config = {
     },
     gmail: {
         adminAccount: process.env.ADMIN_EMAIL,
-        adminPass: process.env.ADMIN_PASS
+        adminPass: process.env.ADMIN_PASS,
+        emailToken:process.env.SECRET_TOKEN_EMAIL
     }
 }

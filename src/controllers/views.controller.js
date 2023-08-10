@@ -13,6 +13,10 @@ export default class ViewsController{
         res.render('home', { productos });
     }
 
+    async forgotPassword (req,res){
+        res.render('forgotPassword');
+    }
+
     async getRealTimeProducts (req,res){
         res.render('realTimeProducts')
     }

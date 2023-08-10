@@ -1863,3 +1863,27 @@ Fecha: 16/7/2023 - Hora: 19:49:44 - Metodo: ALTA PROD
 Fecha: 16/7/2023 - Hora: 19:50:22 - Metodo: ALTA PROD
 Fecha: 16/7/2023 - Hora: 19:50:27 - Metodo: ALTA PROD
 Fecha: 16/7/2023 - Hora: 19:50:30 - Metodo: ALTA PROD
+Fecha: 30/7/2023 - Hora: 14:41:10 - Metodo: ALTA PROD
+Fecha: 30/7/2023 - Hora: 14:43:12 - Metodo: ALTA PROD
+Fecha: 30/7/2023 - Hora: 14:43:36 - Metodo: ALTA PROD
+Fecha: 30/7/2023 - Hora: 14:44:30 - Metodo: ALTA PROD
+Fecha: 30/7/2023 - Hora: 14:44:38 - Metodo: ALTA PROD
+Fecha: 30/7/2023 - Hora: 14:44:43 - Metodo: ALTA PROD
+Fecha: 31/7/2023 - Hora: 19:25:09 - Metodo: ALTA PROD
+Fecha: 31/7/2023 - Hora: 19:25:15 - Metodo: ALTA PROD
+Fecha: 9/8/2023 - Hora: 20:17:05 - Metodo: CREAR UN CART
+Fecha: 9/8/2023 - Hora: 20:17:46 - Metodo: CONSULTA PRODS
+Fecha: 9/8/2023 - Hora: 20:18:01 - Metodo: CONSULTA PRODS
+Fecha: 9/8/2023 - Hora: 20:19:57 - Metodo: CREAR UN CART
+Fecha: 9/8/2023 - Hora: 20:20:06 - Metodo: CONSULTA PRODS
+Fecha: 9/8/2023 - Hora: 20:20:16 - Metodo: CONSULTA PRODS
+Fecha: 9/8/2023 - Hora: 20:47:34 - Metodo: CONSULTA PRODS
+Fecha: 9/8/2023 - Hora: 21:02:49 - Metodo: CREAR UN CART
+Fecha: 9/8/2023 - Hora: 21:03:01 - Metodo: CREAR UN CART
+Fecha: 9/8/2023 - Hora: 21:18:52 - Metodo: CONSULTA PRODS
+Fecha: 9/8/2023 - Hora: 21:23:46 - Metodo: ALTA PROD
+Fecha: 9/8/2023 - Hora: 21:27:03 - Metodo: CONSULTA PRODS
+Fecha: 9/8/2023 - Hora: 21:28:34 - Metodo: ALTA PROD
+Fecha: 9/8/2023 - Hora: 21:29:06 - Metodo: ALTA PROD
+Fecha: 9/8/2023 - Hora: 21:29:21 - Metodo: ALTA PROD
+Fecha: 9/8/2023 - Hora: 21:29:44 - Metodo: ALTA PROD

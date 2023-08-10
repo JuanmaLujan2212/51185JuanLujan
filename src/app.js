@@ -20,6 +20,7 @@ import cartRouter from './routes/carts.router.js';
 import viewsRouter from './routes/views.router.js';
 import initializePassport from "./config/passport.config.js";
 import { addLogger } from "./utils/logger.js";
+import { errorHandler } from "./middlewares/errorHandler.js";
 
 const productManager = new ProductManager();
 
@@ -41,6 +42,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(cookieParser());
 
 app.use(addLogger);
+app.use(errorHandler)
 
 app.get("/LoggerTest", (req,res)=>{
     req.logger.silly("nivel silly");

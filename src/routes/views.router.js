@@ -7,6 +7,13 @@ const router = Router();
 
 router.get('/', viewsController.getHomeProducts);
 
+router.get('/forgotPassword', viewsController.forgotPassword);
+
+router.get("/reset-password",(req,res)=>{
+    const token = req.query.token;
+    res.render("resetPassword",{token});
+});
+
 router.get('/chat', viewsController.chat);
 
 router.get('/realtimeproducts', viewsController.getRealTimeProducts);
