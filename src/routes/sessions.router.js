@@ -106,7 +106,7 @@ router.post("/reset-password", async (req,res)=>{
     }
 });
 
-router.get("/premium/:uid", checkRole(["admin"]), async(req,res)=>{
+router.get("/premium/:uid", async(req,res)=>{
     try {
         const userId = req.params.uid;
         const user = await UserModel.findById(userId);
