@@ -68,12 +68,18 @@ export default class ProductManager{
         }
     }
 
-    deleteProduct = async (id_producto)=>{
+    deleteProduct = async (id_producto, user)=>{
         await managerAccess.crearRegistro('BORRAR UN PROD')
 
         const exist = await this.existProduct(id_producto)
+        const prod = await productModel.findById(id_producto);
 
         if(exist){
+          if(user.rol === "premium"){
+            if(user.email !== prod.owner){
+              return 'No puede eliminar el producto porque no fue creado por usted'
+            }
+          }
             const result = await productModel.deleteOne({ _id: id_producto });
             return result
         }else{
@@ -81,9 +87,9 @@ export default class ProductManager{
         }
     }
 
-    addProduct = async (product) => {
+    addProduct = async (product, user) => {
       await managerAccess.crearRegistro('ALTA PROD');
-
+ 
       const { title, description, code, price, stock, category, thumbnail, status } = product;
     
      if(!title || !description || !code || !price || !stock || !category || !thumbnail || !status){
@@ -94,8 +100,13 @@ export default class ProductManager{
           errorCode: EError.INVALID_JSON,
       });
      }
+
+     const productWithOwner = {
+      ...product,
+      owner: user.email,
+    };
     
-      const result = await productModel.create(product);
+      const result = await productModel.create(productWithOwner);
       console.log('Producto creado con éxito!');
       return result;
     };

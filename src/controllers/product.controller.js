@@ -30,13 +30,15 @@ export default class ProductController{
 
     async addProduct (req,res){
         const prod = req.body;
-        const result = await productManager.addProduct(prod);
+        const user = req.session.user
+        const result = await productManager.addProduct(prod, user);
         res.send({result})
     }
 
     async deleteProduct (req,res){
         const id = req.params.pid;
-        const result = await productManager.deleteProduct(id);
+        const user = req.session.user
+        const result = await productManager.deleteProduct(id, user);
         res.send({result})
     }
 

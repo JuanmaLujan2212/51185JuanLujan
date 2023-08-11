@@ -91,9 +91,9 @@ export default class ViewsController{
     async profile(req, res) {
         const user = req.session.user;
     
-        if (user.rol === 'admin') {
+        if (user.rol === 'admin' || user.rol === 'premium') {
           const products = await productModel.find().lean();
-          res.render('adminProfile', { products });
+          res.render('adminProfile', { products, user },);
         } else {
             const cart = await cartModel.findById(user.cart).populate('products.product').lean();
 

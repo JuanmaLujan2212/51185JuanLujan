@@ -1887,3 +1887,55 @@ Fecha: 9/8/2023 - Hora: 21:28:34 - Metodo: ALTA PROD
 Fecha: 9/8/2023 - Hora: 21:29:06 - Metodo: ALTA PROD
 Fecha: 9/8/2023 - Hora: 21:29:21 - Metodo: ALTA PROD
 Fecha: 9/8/2023 - Hora: 21:29:44 - Metodo: ALTA PROD
+Fecha: 11/8/2023 - Hora: 14:18:50 - Metodo: CONSULTA PRODS
+Fecha: 11/8/2023 - Hora: 14:30:07 - Metodo: ALTA PROD
+Fecha: 11/8/2023 - Hora: 14:33:16 - Metodo: ALTA PROD
+Fecha: 11/8/2023 - Hora: 14:35:28 - Metodo: ALTA PROD
+Fecha: 11/8/2023 - Hora: 14:48:59 - Metodo: ALTA PROD
+Fecha: 11/8/2023 - Hora: 14:49:34 - Metodo: ALTA PROD
+Fecha: 11/8/2023 - Hora: 14:49:53 - Metodo: ALTA PROD
+Fecha: 11/8/2023 - Hora: 14:54:30 - Metodo: CONSULTA PRODS
+Fecha: 11/8/2023 - Hora: 14:55:15 - Metodo: CONSULTA PRODS
+Fecha: 11/8/2023 - Hora: 14:56:12 - Metodo: CONSULTA PRODS
+Fecha: 11/8/2023 - Hora: 14:57:01 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 14:57:06 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 14:57:51 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 14:57:51 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 14:57:59 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 14:58:20 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 14:58:46 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 14:59:28 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:00:32 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:02:39 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:03:00 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:03:27 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:03:29 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:04:46 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:04:57 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:05:14 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:05:14 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:05:19 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:05:32 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:05:46 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:06:28 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:06:43 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:08:06 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:08:15 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:08:25 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:08:50 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:09:28 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:09:47 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:09:49 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:10:16 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:10:17 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:10:50 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:11:20 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:11:39 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:11:39 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:11:58 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:12:00 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:12:21 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:14:04 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:14:31 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:14:32 - Metodo: BORRAR UN PROD
+Fecha: 11/8/2023 - Hora: 15:14:35 - Metodo: BORRAR UN PROD
