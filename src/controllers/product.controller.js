@@ -4,22 +4,26 @@ const productManager =  new ProductManager();
 
 export default class ProductController{
 
-    async getProducts (req,res){
+    async getProducts(req, res) {
         const { limit = 10, page = 1, sort, query, availability } = req.query;
         const parsedLimit = parseInt(limit);
         const parsedPage = parseInt(page);
     
         const options = {
-            limit: isNaN(parsedLimit) ? 10 : parsedLimit,
-            page: isNaN(parsedPage) ? 1 : parsedPage,
-            sort: sort === 'asc' ? 'asc' : sort === 'desc' ? 'desc' : undefined,
-            query: query || undefined,
-            availability: availability === 'true' ? true : availability === 'false' ? false : undefined,
-          };
-      
-        const result = await productManager.getProducts(options);
-        return res.send(result.payload)
-    }
+          limit: isNaN(parsedLimit) ? 10 : parsedLimit,
+          page: isNaN(parsedPage) ? 1 : parsedPage,
+          sort: sort === 'asc' ? 'asc' : sort === 'desc' ? 'desc' : undefined,
+          query: query || undefined,
+          availability: availability === 'true' ? true : availability === 'false' ? false : undefined,
+        };
+    
+        try {
+          const result = await productManager.getProducts(options);
+          res.status(200).json({ status: "success", payload: result.payload });
+        } catch (error) {
+          res.status(400).json({ status: "error", message: "Error al obtener los productos" });
+        }
+      }
 
     async getProductsById (req,res){
         const id = req.params.pid;
@@ -28,12 +32,17 @@ export default class ProductController{
         res.send({result})
     }
 
-    async addProduct (req,res){
+    async addProduct(req, res) {
         const prod = req.body;
-        const user = req.session.user
-        const result = await productManager.addProduct(prod, user);
-        res.send({result})
-    }
+        const user = req.session.user;
+    
+        try {
+          const result = await productManager.addProduct(prod, user);
+          res.status(200).json({ message: "Producto creado con éxito", data: result });
+        } catch (error) {
+          res.status(400).json({ error: error.message });
+        }
+      }
 
     async deleteProduct (req,res){
         const id = req.params.pid;

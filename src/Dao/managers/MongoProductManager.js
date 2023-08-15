@@ -50,8 +50,7 @@ export default class ProductManager{
             hasPrevPage: hasPrevPage, 
             hasNextPage: hasNextPage, 
           };
-
-        // console.log(response)  
+ 
       
         return response;
     }
@@ -89,22 +88,22 @@ export default class ProductManager{
 
     addProduct = async (product, user) => {
       await managerAccess.crearRegistro('ALTA PROD');
- 
+    
       const { title, description, code, price, stock, category, thumbnail, status } = product;
     
-     if(!title || !description || !code || !price || !stock || !category || !thumbnail || !status){
+      if (!title || !description || !code || !price || !stock || !category || !thumbnail || !status) {
         CustomError.createError({
           name: "Create product error",
           cause: generateProductErrorInfo(product),
-          message: "An error ocurred",
+          message: "An error occurred",
           errorCode: EError.INVALID_JSON,
-      });
-     }
-
-     const productWithOwner = {
-      ...product,
-      owner: user.email,
-    };
+        });
+      }
+    
+      const productWithOwner = {
+        ...product,
+        owner: user ? (user.email ? user.email : "admin") : "admin",
+      };
     
       const result = await productModel.create(productWithOwner);
       console.log('Producto creado con éxito!');

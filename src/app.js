@@ -27,7 +27,7 @@ const productManager = new ProductManager();
 
 const PORT =  config.server.port;
 const app = express();
-const MONGO = config.mongo.url;
+const MONGO = "mongodb+srv://juanmalujantmp:juanma2212@juanmanuelorg.mf4wbjc.mongodb.net/?retryWrites=true&w=majority";
 
 const connection = await mongoose.connect(MONGO)
 
@@ -120,3 +120,5 @@ io.on('connection',  async socket =>{
 
 
 })
+
+export {app};
