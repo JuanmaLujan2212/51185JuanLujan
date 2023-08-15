@@ -4,6 +4,7 @@ import userModel from "../src/Dao/models/user.js";
 import productModel from "../src/Dao/models/products.js";
 import {app} from "../src/app.js";
 import cartModel from "../src/Dao/models/carts.js";
+import { generateEmailToken } from "../src/utils.js";
 
 const expect = chai.expect;
 const requester = supertest(app);
@@ -81,53 +82,27 @@ describe("Testing de App", ()=>{
     
     })
 
-    // describe("Testing de modulo de usuario y session", ()=>{
-    //     before(async function(){
-    //         this.cookie;
-    //         await userModel.deleteMany({})
-    //     })
+    describe("Testing de modulo de usuario y session", ()=>{
+        before(async function(){
+            await userModel.deleteMany({})
+        })
 
-    //     it("Registro de un usuario", async function(){
+        it("Registro de un usuario", async function(){
 
-    //         const userMock = {
-    //             first_name:"juan",
-    //             last_name:"perez",
-    //             email:userTest,
-    //             password:"1234"
-    //         }
+            const userMock = {
+                first_name:"juan",
+                last_name:"perez",
+                email:"juanma@gmail.com",
+                rol: "user",
+                age: 13,
+                password:"1234"
+            }
 
-    //         const responseSignup = await requester.post("/api/sessions/register").send(userMock);
+            const responseSignup = await requester.post("/api/sessions/register").send(userMock);
 
-    //         expect(responseSignup.statusCode).to.be.equal(200);
+            expect(responseSignup.statusCode).to.be.equal(200);
 
-    //     })
+        })
         
-    //     it("Que el endpoint de unprotectedLogin devuelva una cookie de nombre unprotectedCookie.", async function(){
-            
-    //         const credentialsMock = {
-    //             email: userTest,
-    //             password: "1234",
-    //           };
-    //           const response = await requester.get('/api/sessions/unprotectedLogin').send(credentialsMock);
-
-    //           console.log(response)
-    //           const cookiesResult = response.headers['set-cookie'][0];
-    //           expect(cookiesResult).to.be.ok
-         
-    //           this.cookie = {
-    //             name: cookiesResult.split('=')[0],
-    //             value: cookiesResult.split('=')[1],
-    //           }
-        
-    //           expect(this.cookie.name).to.be.equal('unprotectedCookie');
-    //           //expect(this.cookie.value).to.be.ok
-    //     });
-
-    //     it("Que el endpoint unprotectedCurrent devuelva al usuario completo.", async function(){
-    //         const {_body : { payload }} = await requester.get("/api/sessions/unprotectedCurrent")
-    //         .set("Cookie", `${this.cookie.name}=${this.cookie.value}`);
-    //         expect(payload.email).to.be.equal(userTest)
-    //     })
-        
-    // })
+    })
 })

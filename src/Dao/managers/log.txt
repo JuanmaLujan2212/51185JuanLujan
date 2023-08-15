@@ -2022,3 +2022,10 @@ Fecha: 14/8/2023 - Hora: 23:51:34 - Metodo: ALTA PROD
 Fecha: 14/8/2023 - Hora: 23:51:34 - Metodo: CONSULTA PRODS
 Fecha: 14/8/2023 - Hora: 23:51:34 - Metodo: CREAR UN CART
 Fecha: 14/8/2023 - Hora: 23:51:34 - Metodo: CONSULTA CARTS
+Fecha: 15/8/2023 - Hora: 00:07:52 - Metodo: ALTA PROD
+Fecha: 15/8/2023 - Hora: 00:07:53 - Metodo: ALTA PROD
+Fecha: 15/8/2023 - Hora: 00:07:53 - Metodo: ALTA PROD
+Fecha: 15/8/2023 - Hora: 00:07:53 - Metodo: CONSULTA PRODS
+Fecha: 15/8/2023 - Hora: 00:07:53 - Metodo: CREAR UN CART
+Fecha: 15/8/2023 - Hora: 00:07:53 - Metodo: CONSULTA CARTS
+Fecha: 15/8/2023 - Hora: 00:07:54 - Metodo: CREAR UN CART
