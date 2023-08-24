@@ -15,7 +15,31 @@ const schema = new mongoose.Schema({
     cart:{
         type: mongoose.Schema.Types.ObjectId,
         ref:"Carts"
+    },
+    documents:{
+        type:[
+            {
+                name:{type:String,required:true},
+                reference:{type:String,required:true}
+            }
+        ],
+        default:[]
+    },
+    last_connection:{
+        type:Date,
+        default: null
+    },
+    status:{
+        type:String,
+        require:true,
+        enums:["completo","incompleto","pendiente"],
+        default:"pendiente"
+    },
+    avatar:{
+        type:String,
+        default:""
     }
+
 
 })
 

@@ -18,6 +18,9 @@ import productRouter from './routes/products.router.js';
 import ticketRouter from './routes/tickets.router.js'
 import cartRouter from './routes/carts.router.js';
 import viewsRouter from './routes/views.router.js';
+import { usersRouter } from "./routes/users.routes.js";
+
+
 import initializePassport from "./config/passport.config.js";
 import { addLogger } from "./utils/logger.js";
 import { errorHandler } from "./middlewares/errorHandler.js";
@@ -75,6 +78,7 @@ app.use('/api/sessions', sessionRouter)
 app.use('/api/products', productRouter);
 app.use('/api/tickets', ticketRouter);
 app.use('/api/carts', cartRouter);
+app.use("/api/users", usersRouter);
 
 
 

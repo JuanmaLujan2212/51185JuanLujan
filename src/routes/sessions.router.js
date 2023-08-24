@@ -1,13 +1,12 @@
 import { Router } from 'express';
 import passport from 'passport';
 import { sendRecoveryPass } from '../config/gmail.js';
-import { createHash, validatePassword, generateEmailToken, verifyEmailToken } from "../utils.js";
-import {checkRole} from "../middlewares/auth.js";
+import { createHash, validatePassword, generateEmailToken, verifyEmailToken, uploaderProfile } from "../utils.js";
 import UserModel from '../Dao/models/user.js';
 
 const router = Router();
 
-router.post('/register', passport.authenticate('register', { failureRedirect:'/failregister'} ), async (req, res) =>{
+router.post('/register',uploaderProfile.single("avatar"), passport.authenticate('register', { failureRedirect:'/failregister'} ), async (req, res) =>{
 
     res.send({status:"succes", message:"User registered"});
 
@@ -106,20 +105,5 @@ router.post("/reset-password", async (req,res)=>{
     }
 });
 
-router.get("/premium/:uid", async(req,res)=>{
-    try {
-        const userId = req.params.uid;
-        const user = await UserModel.findById(userId);
-        const userRol = user.rol;
-        if(userRol === "user"){
-            user.rol = "premium"
-        }
-        await UserModel.updateOne({_id:user._id},user);
-        res.send({status:"success", message:"rol modificado"});
-    } catch (error) {
-        console.log(error.message);
-        res.json({status:"error", message:"hubo un error al cambiar el rol del usuario"})
-    }
-}) 
 
 export default router;

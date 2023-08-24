@@ -4,6 +4,8 @@ import bcrypt from 'bcrypt';
 import {Faker, en, es } from "@faker-js/faker";
 import jwt from "jsonwebtoken";
 import { config } from './config/config.js';
+import multer from "multer";
+import path from "path";
 
 export const customFaker = new Faker({
     locale: [en],
@@ -53,3 +55,57 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default __dirname;
+
+const validFields = (body) => {
+    const {name, email, password} = body;
+    if(!name || !email || !password){
+        return false;
+    }else{
+        return true;
+    }
+};
+
+const multerFilterProfile = (req,file,cb)=>{
+    const isValid = validFields(req.body);
+    if(isValid){
+        cb(null,true)
+    }else{
+        cb(null,false)
+    }
+}
+
+const profileStorage = multer.diskStorage({
+    destination: function(req,file,cb) {
+      cb(null,path.join(__dirname,"/multer/users/images"))  
+    },
+    filename: function (req,file,cb) {
+        cb(null,`${req.body.email}-perfil-${file.originalname}`)
+    }
+    
+})
+
+export const uploaderProfile = multer({storage:profileStorage,fileFilter:multerFilterProfile })
+
+
+const documentStorage = multer.diskStorage({
+    destination: function(req,file,cb) {
+        cb(null,path.join(__dirname,"/multer/users/documents"));
+    },
+    filename: function(req,file,cb) {
+        console.log("req.body")
+        cb(null,`${req.user.email}-document-${file.originalname}`);
+    }
+})
+
+export const uploaderDocument = multer({storage:documentStorage});
+
+const productStorage= multer.diskStorage({
+    destination: function(req,file,cb) {
+        cb(null,path.join(__dirname,"/multer/products/images"));
+    },
+    filename: function(req,file,cb) {
+        cb(null,`${req.body.code}-image-${file.originalname}`);
+    }
+})
+
+export const uploaderProduct = multer({storage:productStorage})

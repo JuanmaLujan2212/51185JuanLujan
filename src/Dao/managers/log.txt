@@ -2029,3 +2029,14 @@ Fecha: 15/8/2023 - Hora: 00:07:53 - Metodo: CONSULTA PRODS
 Fecha: 15/8/2023 - Hora: 00:07:53 - Metodo: CREAR UN CART
 Fecha: 15/8/2023 - Hora: 00:07:53 - Metodo: CONSULTA CARTS
 Fecha: 15/8/2023 - Hora: 00:07:54 - Metodo: CREAR UN CART
+Fecha: 23/8/2023 - Hora: 22:44:10 - Metodo: CREAR UN CART
+Fecha: 23/8/2023 - Hora: 22:47:49 - Metodo: CREAR UN CART
+Fecha: 23/8/2023 - Hora: 22:53:53 - Metodo: CREAR UN CART
+Fecha: 23/8/2023 - Hora: 23:01:26 - Metodo: CREAR UN CART
+Fecha: 23/8/2023 - Hora: 23:03:44 - Metodo: CREAR UN CART
+Fecha: 23/8/2023 - Hora: 23:04:01 - Metodo: CREAR UN CART
+Fecha: 23/8/2023 - Hora: 23:04:10 - Metodo: CREAR UN CART
+Fecha: 23/8/2023 - Hora: 23:32:16 - Metodo: CONSULTA PRODS
+Fecha: 23/8/2023 - Hora: 23:34:27 - Metodo: CONSULTA PRODS
+Fecha: 23/8/2023 - Hora: 23:34:53 - Metodo: CONSULTA PRODS
+Fecha: 23/8/2023 - Hora: 23:36:38 - Metodo: CREAR UN CART
