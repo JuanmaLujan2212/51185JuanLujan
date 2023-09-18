@@ -28,7 +28,7 @@ import { errorHandler } from "./middlewares/errorHandler.js";
 const productManager = new ProductManager();
 
 
-const PORT =  config.server.port;
+const PORT =  process.env.PORT || 8080;
 const app = express();
 const MONGO = "mongodb+srv://juanmalujantmp:juanma2212@juanmanuelorg.mf4wbjc.mongodb.net/?retryWrites=true&w=majority";
 

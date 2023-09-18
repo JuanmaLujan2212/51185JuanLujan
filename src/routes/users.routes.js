@@ -4,6 +4,10 @@ import { uploaderDocument } from "../utils.js";
 
 const router = Router();
 
+router.get("/", UserController.getUsers);
+
+router.delete("/", UserController.delUsers);
+
 router.put("/premium/:uid" , UserController.changeRol);
 
 router.put("/:uid/documents",

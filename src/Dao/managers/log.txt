@@ -2040,3 +2040,8 @@ Fecha: 23/8/2023 - Hora: 23:32:16 - Metodo: CONSULTA PRODS
 Fecha: 23/8/2023 - Hora: 23:34:27 - Metodo: CONSULTA PRODS
 Fecha: 23/8/2023 - Hora: 23:34:53 - Metodo: CONSULTA PRODS
 Fecha: 23/8/2023 - Hora: 23:36:38 - Metodo: CREAR UN CART
+Fecha: 17/9/2023 - Hora: 20:22:16 - Metodo: CREAR UN CART
+Fecha: 17/9/2023 - Hora: 20:22:36 - Metodo: CONSULTA PRODS
+Fecha: 17/9/2023 - Hora: 20:22:40 - Metodo: CONSULTA PRODS
+Fecha: 17/9/2023 - Hora: 21:09:58 - Metodo: CONSULTA PRODS
+Fecha: 17/9/2023 - Hora: 21:28:07 - Metodo: ALTA PROD

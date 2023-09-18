@@ -21,6 +21,8 @@ router.post('/login', passport.authenticate('login',{failureRedirect:'/faillogin
 
     if(!req.user) return res.status(400).send({status:"error", error: 'Invalid credentials'});
 
+    req.user.last_connection = new Date();
+    await req.user.save();
 
     req.session.user = {
         first_name : req.user.first_name,

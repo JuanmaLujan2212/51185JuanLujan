@@ -55,6 +55,25 @@ class UserController{
             res.json({status:"error", message: "Hubo un error en la carga de los archivos."})
         }
     }
+    static getUsers = async (req,res) =>{
+        try {
+            const result = await UserModel.find();
+            res.status(200).json({ status: "success", payload: result });
+
+          } catch (error) {
+            res.status(400).json({ status: "error", message: "Error al obtener los usuarios" });
+          }
+    }
+    static delUsers = async (req, res) => {
+        try {
+            const twoDaysAgo = new Date(Date.now() - 2 * 24 * 60 * 60 * 1000);
+            const result = await UserModel.deleteMany({ last_connection: { $lt: twoDaysAgo } });
+    
+            res.status(200).json({ status: "success", payload: result });
+        } catch (error) {
+            res.status(400).json({ status: "error", message: "Error al eliminar usuarios inactivos" });
+        }
+    }
 }
 
 export {UserController}
