@@ -1,6 +1,5 @@
 import productModel from "../models/products.js";
 import ManagerAccess from "./ManagerAccess.js";
-import { generateProduct } from "../../utils.js";
 import { EError } from "../../services/EError.js";
 import { CustomError } from "../../services/customError.service.js";
 import { generateProductErrorInfo } from "../../services/productErrorinfo.js";
@@ -124,13 +123,5 @@ export default class ProductManager{
 
     }
 
-    mockingProducts = async ()=>{
-        let products = [];
-        for (let i = 0; i < 100; i++) {
-            const prod = generateProduct();
-            products.push(prod)
-        }
-        return products
-    }
 
 }
